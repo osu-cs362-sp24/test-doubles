@@ -3,8 +3,9 @@
  * required for Jest to function when running JSDOM tests.
  */
 
-const { TextDecoder, TextEncoder } = require('node:util')
+require("whatwg-fetch")
 
+const { TextDecoder, TextEncoder } = require('node:util')
 Object.defineProperties(globalThis, {
   TextDecoder: { value: TextDecoder },
   TextEncoder: { value: TextEncoder },
