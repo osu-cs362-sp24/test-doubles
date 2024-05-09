@@ -8,7 +8,7 @@ const domTesting = require("@testing-library/dom")
 const userEvent = require("@testing-library/user-event").default
 
 const http = require("msw").http
-const HttpResponse = require("msw/node").HttpResponse
+const HttpResponse = require("msw").HttpResponse
 const setupServer = require("msw/node").setupServer
 
 const initDomFromFiles = require("../utils/initDomFromFiles")
